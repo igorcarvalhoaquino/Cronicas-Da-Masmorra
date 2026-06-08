@@ -42,23 +42,39 @@ Q - Sair para o Menu Principal.
 -------------------------------
 
 | Includes e defines
+
  Constantes (fases, armas, tamanhos máximos)
+ 
  Estruturas de dados
+ 
  Entity  — monstros e NPC
+ 
  Player  — posição, direção, vidas, arma, chaves
+ 
  Map     — grid de células, entidades, estado
+ 
  Construção dos mapas
    | build_village()
+   
    |  build_floor1()
+   
    | build_floor2()
+   
    | build_floor3()
+   
  |  Loop principal
  draw()               — renderiza o mapa e o HUD
+ 
  handle_input()       — lê tecla e atualiza estado
+ 
  do_attack()          — calcula área de ataque
+ 
  do_interact()        — chaves, portas, NPC, escadas
+ 
  move_monsters()      — IA dos monstros
+ 
  check_monster_contact() — dano ao jogador
+ 
  | Telas especiais
      show_menu()
       show_tutorial()
